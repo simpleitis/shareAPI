@@ -15,24 +15,14 @@ async function getUrFromService() {
 }
 
 export default function App() {
-
     return (
         <>
-            <TwitterShareButton
-                url="https://share-api.vercel.app/"
-            >
+            <TwitterShareButton url="https://share-api.vercel.app/">
                 <TwitterIcon />
             </TwitterShareButton>
-            {/* <WhatsappShareButton
-                ref={shareButton}
-                // Disable calling the dialog if we don't have a url yet.
-                openShareDialogOnClick={url !== 'none'}
-                url="https://share-api.vercel.app/"
-                onClick={onClick}
-              
-            >
+            <WhatsappShareButton url="https://share-api.vercel.app/">
                 <WhatsappIcon />
-            </WhatsappShareButton> */}
+            </WhatsappShareButton>
         </>
     )
 }
