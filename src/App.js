@@ -19,9 +19,8 @@ export default function App() {
     return (
         <>
             <Helmet>
-                <meta charSet="utf-8" />
                 <title>Share app</title>
-                <meta
+               <meta
                     property="og:image"
                     content="https://cdn.pixabay.com/photo/2015/03/10/17/23/youtube-667451_1280.png"
                 />
