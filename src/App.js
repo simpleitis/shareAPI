@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { Helmet } from 'react-helmet'
 import {
     FacebookIcon,
     FacebookShareButton,
@@ -17,6 +18,14 @@ async function getUrFromService() {
 export default function App() {
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Share app</title>
+                <meta
+                    property="og:image"
+                    content="https://cdn.pixabay.com/photo/2015/03/10/17/23/youtube-667451_1280.png"
+                />
+            </Helmet>
             <TwitterShareButton url="https://share-api.vercel.app/">
                 <TwitterIcon />
             </TwitterShareButton>
